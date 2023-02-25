@@ -1,15 +1,14 @@
 {
-    "name": "TubTuk",
-    "version": "1.0.2",
+    "name": "@thiagocolen/tub-tuk",
+    "version": "0.0.1",
     "description": "Download audio from YouTube",
     "main": "bin/index.js",
-    "type": "commonjs",
     "scripts": {
-        "build": "babel src -d bin"
+        "build": "rollup -c"
     },
     "bin": {
-        "tubtuk": "./bin/index.js"
-},
+        "tub-tuk": "./bin/index.js"
+    },
     "author": "Thiago Colen",
     "license": "MIT",
     "dependencies": {
@@ -18,9 +17,9 @@
         "ytdl-core": "^4.11.2"
     },
     "devDependencies": {
-        "@babel/cli": "^7.21.0",
-        "@babel/core": "^7.21.0",
-        "@babel/plugin-proposal-class-properties": "^7.18.6",
-        "@babel/preset-env": "^7.20.2"
+        "@rollup/plugin-commonjs": "^24.0.1",
+        "@rollup/plugin-json": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "rollup": "^3.17.2"
     }
 }
