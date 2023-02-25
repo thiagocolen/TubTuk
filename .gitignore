@@ -1,3 +1,4 @@
 _playlist-url-file.txt
 .vscode
 /node_modules
+/bin

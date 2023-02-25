@@ -1,7 +1,7 @@
-import Main from "./src/main.js";
+#!/usr/bin/env node
+"use strict";
 
-const main = new Main();
+var _main = _interopRequireDefault(require("./main.js"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+const main = new _main.default();
 main.init();
-
-// TODO: it's with bug, but we go to test this shit again
-// const ytpl = require("ytpl");
